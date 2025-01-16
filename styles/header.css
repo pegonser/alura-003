@@ -37,6 +37,7 @@
 
 .lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu__link {
@@ -52,3 +53,6 @@
     background-color: var(--branco);
 }
 
+.container__botao {
+    display: none;
+}
