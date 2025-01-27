@@ -1,0 +1,43 @@
+.contato {
+    background-color: var(--cor-de-fundo);
+    padding: 1em;
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    /*
+Não aparece direito no Firefox, o texto fica por cima do ícone de email, e tentar resolver isso me jogou em um rabbit hole imenso das diferenças entre o Chrome e o Firefox. Não consegui resolver com o reset.css. Não estou no nível de entender aonde o problema está. A melhor abordagem seria apenas mudar o design, mas depois de horas tentando fazer um simples texto mover de lugar, decidi deixar assim. Um dia, talvez, eu volte para resolver e morrer sem arrependimentos ou frustrações.
+
+Como aprendizado, conclui que devo programar usando o Chrome como referência, afinal, o que os olhos não vêem, o coração não sente.
+*/
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/email.svg") no-repeat;
+    background-position: 1em;
+    padding-left: 3em;
+}
